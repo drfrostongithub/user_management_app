@@ -124,7 +124,6 @@
 </template>
 
 <script>
-  import { v4 as uuidv4 } from "uuid";
   import usersData from "../assets/MOCK_DATA.json";
 
   export default {
@@ -151,7 +150,7 @@
           this.newUser.job_title
         ) {
           this.users.push({
-            id: uuidv4(),
+            id: this.users.length + 1,
             ...this.newUser,
             editMode: false,
           });
@@ -159,6 +158,7 @@
           this.newUser.email = "";
           this.newUser.job_title = "";
         }
+        this.showModal = false;
       },
       editUser(user) {
         user.editMode = true;
@@ -219,7 +219,7 @@
   }
 
   label {
-    display: block;
+    display: flex;
     margin-bottom: 5px;
   }
 
