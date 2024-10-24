@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="api-table">
     <h2>User List from API</h2>
     <button @click="fetchUsers">Load Users</button>
     <table v-if="users.length">
@@ -83,5 +83,12 @@
     margin-top: 20px;
     font-style: italic;
     color: #777;
+  }
+
+  .api-table {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
   }
 </style>

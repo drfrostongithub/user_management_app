@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="user-table">
     <h1>User Table</h1>
 
     <input v-model="searchQuery" placeholder="Search name" />
@@ -174,6 +174,13 @@
 </script>
 
 <style scoped>
+  .user-table {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
   .modal {
     display: block;
     position: fixed;
