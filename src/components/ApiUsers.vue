@@ -44,3 +44,44 @@
     },
   };
 </script>
+
+<style scoped>
+  h2 {
+    color: #333;
+  }
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  .user-table,
+  th,
+  td {
+    border: 1px solid #ccc;
+  }
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  p {
+    margin-top: 20px;
+    font-style: italic;
+    color: #777;
+  }
+</style>
